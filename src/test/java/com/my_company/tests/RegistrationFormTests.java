@@ -2,9 +2,12 @@ package com.my_company.tests;
 
 import com.github.javafaker.Faker;
 import com.my_company.pages.RegistrationPage;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
+@Tag("owner")
 public class RegistrationFormTests extends TestBase {
+
     RegistrationPage registrationPage = new RegistrationPage();
     Faker faker = new Faker();
     String firstName = faker.name().firstName(),
